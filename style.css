@@ -29,7 +29,7 @@ body {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
-.contact-wrapper > * {
+.contact-wrapper>* {
     padding: 1em;
 }
 
@@ -103,6 +103,18 @@ body {
     padding: .3em;
 }
 
+/* SMALL SCREEN */
+@media (max-width: 500px) {
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form .block {
+        grid-column: 1;
+    }
+}
+
 /* LARGE SCREEN */
 @media (min-width: 870px) {
     body {
@@ -114,7 +126,7 @@ body {
         grid-template-columns: 2fr 1fr;
     }
 
-    .contact-wrapper > * {
+    .contact-wrapper>* {
         padding: 2rem;
     }
 
